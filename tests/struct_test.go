@@ -10,6 +10,6 @@ func TestStruct(t *testing.T) {
 	r := gin.Default()
 	g := r.Group("/user")
 	{
-		g.GET("/:namea", user.GetOne)
+		g.GET("/:names", user.GetOne)
 	}
 }

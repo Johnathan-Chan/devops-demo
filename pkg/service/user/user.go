@@ -1,9 +1,9 @@
 package user
 
 import (
-	"devops-demo/pkg/core"
-	"devops-demo/pkg/service"
-	"devops-demo/pkg/store"
+	"github.com/Johnathan-Chan/devops-demo/pkg/core"
+	"github.com/Johnathan-Chan/devops-demo/pkg/service"
+	"github.com/Johnathan-Chan/devops-demo/pkg/store"
 )
 
 type UserService struct {
@@ -33,5 +33,3 @@ func (u UserService) Range(condititon store.Condititon, f func(core.IObject) err
 func NewUserService(s service.Service) service.IService {
 	return &UserService{s}
 }
-
-

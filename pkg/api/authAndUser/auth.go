@@ -1,7 +1,7 @@
 package authAndUser
 
 import (
-	"devops-demo/pkg/api"
+	"github.com/Johnathan-Chan/devops-demo/pkg/api"
 	"github.com/gin-gonic/gin"
 	"net/http"
 )
@@ -22,14 +22,14 @@ func NewAuth(i api.INormalServer) *Auth {
 	return u
 }
 
-func (u *Auth) GetAll(g *gin.Context)  {
+func (u *Auth) GetAll(g *gin.Context) {
 
 	g.JSON(http.StatusOK, gin.H{
 		"data": "GetAll",
 	})
 }
 
-func (u *Auth) GetOne(g *gin.Context)  {
+func (u *Auth) GetOne(g *gin.Context) {
 	g.JSON(http.StatusOK, gin.H{
 		"data": "GetOne",
 	})

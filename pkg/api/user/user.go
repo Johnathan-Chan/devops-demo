@@ -1,7 +1,7 @@
 package user
 
 import (
-	"devops-demo/pkg/api"
+	"github.com/Johnathan-Chan/devops-demo/pkg/api"
 	"github.com/gin-gonic/gin"
 )
 
@@ -15,8 +15,6 @@ func NewUserServer() api.INormalServer {
 	return &User{route}
 }
 
-func (u *User) Run(addr string) error  {
+func (u *User) Run(addr string) error {
 	return u.Engine.Run(addr)
 }
-
-

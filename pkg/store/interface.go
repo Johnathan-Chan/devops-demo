@@ -1,6 +1,6 @@
 package store
 
-import "devops-demo/pkg/core"
+import "github.com/Johnathan-Chan/devops-demo/pkg/core"
 
 type Condititon = map[string]string
 

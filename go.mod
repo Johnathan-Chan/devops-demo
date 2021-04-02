@@ -1,4 +1,4 @@
-module devops-demo
+module github.com/Johnathan-Chan/devops-demo
 
 go 1.16
 

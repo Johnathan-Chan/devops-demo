@@ -1,8 +1,8 @@
 package main
 
 import (
-	"devops-demo/pkg/api"
-	"devops-demo/pkg/api/authAndUser"
+	"github.com/Johnathan-Chan/devops-demo/pkg/api"
+	"github.com/Johnathan-Chan/devops-demo/pkg/api/authAndUser"
 )
 
 func main() {

@@ -1,8 +1,8 @@
 package mongo
 
 import (
-	"devops-demo/pkg/core"
-	"devops-demo/pkg/store"
+	"github.com/Johnathan-Chan/devops-demo/pkg/core"
+	"github.com/Johnathan-Chan/devops-demo/pkg/store"
 )
 
 type Mongo struct {
@@ -20,6 +20,6 @@ func (m Mongo) Del(database, table string, c store.Condititon) error {
 	panic("implement me")
 }
 
-func NewMongo() store.IStore{
+func NewMongo() store.IStore {
 	return &Mongo{}
 }

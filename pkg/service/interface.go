@@ -1,8 +1,8 @@
 package service
 
 import (
-	"devops-demo/pkg/core"
-	"devops-demo/pkg/store"
+	"github.com/Johnathan-Chan/devops-demo/pkg/core"
+	"github.com/Johnathan-Chan/devops-demo/pkg/store"
 )
 
 type IService interface {
@@ -17,6 +17,6 @@ type Service struct {
 	store.IStore
 }
 
-func NewService(is store.IStore) *Service{
+func NewService(is store.IStore) *Service {
 	return &Service{is}
 }
